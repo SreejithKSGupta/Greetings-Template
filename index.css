@@ -1,0 +1,98 @@
+*{
+    margin: 0px;
+    padding: 0px;
+box-sizing: border-box;
+}
+body{
+    background-color: #413e3e;
+    background-image: url(backgrnd.webp);
+}
+#content{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #413e3e;
+    background-image: url(dance.webp);
+    background-size: cover;
+    opacity: 80%;
+    
+}
+
+#sentername{
+    width: 100%;
+    height: 30vh;
+    font-size:4em;
+    font-weight: bold;
+    color: rgb(226, 0, 0);
+    text-align: center;
+    line-height: 30vh;
+    
+}
+#wish{
+    width: 100%;
+    height: 60vh;
+    font-size:200%;
+    font-weight: bold;
+    color: rgb(228, 15, 15);
+    text-align: center;
+
+}
+.button{
+    text-align: center;
+    width: 60%;
+    height: 7vh;
+    font-size:100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    font-weight: bold;
+    color: #fff;
+    background-color: #2a27dd;
+    margin-bottom: 3vh;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+input{
+    width:80vw;
+    height: 10vh;
+    border-radius: 20px;
+    outline: none;
+    background-color: #413e3e;
+    font-size:2em;
+    color: #fff;
+    padding-left:30px;
+    padding-right:5px ;
+}
+
+
+
+
+
+
+@media screen and (min-width: 768px){
+    #content{
+        width: 40vw;
+        margin-left: 30vw;
+        flex-direction: column;
+    }
+    #sentername{
+        font-size:10em; 
+    }
+    #wish{
+        font-size:6em; 
+    }
+    #sentyours{
+        font-size:3em; 
+    }
+    input{
+        width:30vw;
+        font-size: 6em;
+    }
+    
+}
