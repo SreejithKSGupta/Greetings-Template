@@ -51,7 +51,7 @@ body{
     align-items: center;
     font-weight: bold;
     color: #fff;
-    background-color: #2a27dd;
+    background-color: #27a9dd;
     margin-bottom: 3vh;
     border-radius: 10px;
     margin-left: auto;
@@ -82,13 +82,13 @@ input{
         flex-direction: column;
     }
     #sentername{
-        font-size:10em; 
+        font-size:8em; 
     }
     #wish{
-        font-size:6em; 
+        font-size:4em; 
     }
     #sentyours{
-        font-size:3em; 
+        font-size:2em; 
     }
     input{
         width:30vw;
