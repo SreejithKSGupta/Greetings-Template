@@ -1,13 +1,15 @@
-*{
-    margin: 0px;
-    padding: 0px;
-box-sizing: border-box;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-body{
+
+body {
     background-color: #413e3e;
-    background-image: url(backgrnd.webp);
+    background-image: url(../res/backgrnd.webp);
 }
-#content{
+
+#content {
     width: 100%;
     height: 100vh;
     display: flex;
@@ -15,84 +17,78 @@ body{
     justify-content: center;
     align-items: center;
     background-color: #413e3e;
-    background-image: url(dance.webp);
+    background-image: url(../res/dance.webp);
     background-size: cover;
-    opacity: 80%;
-    
+    opacity: 0.8;
 }
 
-#sentername{
+#sentername {
     width: 100%;
     height: 30vh;
-    font-size:4em;
+    font-size: 4em;
     font-weight: bold;
     color: rgb(226, 0, 0);
     text-align: center;
     line-height: 30vh;
-    
 }
-#wish{
+
+#wish {
     width: 100%;
     height: 60vh;
-    font-size:200%;
+    font-size: 2em;
     font-weight: bold;
     color: rgb(228, 15, 15);
     text-align: center;
-
 }
-.button{
+
+.button {
     text-align: center;
     width: 60%;
     height: 7vh;
-    font-size:100%;
+    font-size: 1em;
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     font-weight: bold;
     color: #fff;
     background-color: #27a9dd;
     margin-bottom: 3vh;
     border-radius: 10px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
+    cursor: pointer;
 }
 
-input{
-    width:80vw;
+input {
+    width: 80vw;
     height: 10vh;
     border-radius: 20px;
     outline: none;
     background-color: #413e3e;
-    font-size:2em;
+    font-size: 2em;
     color: #fff;
-    padding-left:30px;
-    padding-right:5px ;
+    padding: 0 30px;
 }
 
-
-
-
-
-
-@media screen and (min-width: 768px){
-    #content{
+@media screen and (min-width: 768px) {
+    #content {
         width: 40vw;
-        margin-left: 30vw;
-        flex-direction: column;
+        margin: 0 auto;
     }
-    #sentername{
-        font-size:8em; 
+
+    #sentername {
+        font-size: 8em;
     }
-    #wish{
-        font-size:4em; 
+
+    #wish {
+        font-size: 4em;
     }
-    #sentyours{
-        font-size:2em; 
+
+    .button {
+        font-size: 2em;
     }
-    input{
-        width:30vw;
+
+    input {
+        width: 30vw;
         font-size: 6em;
     }
-    
 }
