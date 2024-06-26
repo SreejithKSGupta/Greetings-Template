@@ -1,6 +1,12 @@
 document.addEventListener('DOMContentLoaded', () => {
     const url = new URL(window.location.href);
-    const name = url.searchParams.get('name') + "wishes" || 'we wish';
+    let name = url.searchParams.get('name')
+    if (name!= null) {
+        name = name + "Wishes";
+    }
+    else {
+        name = "We wish";
+    }
     document.getElementById('sentername').textContent = name;
     
     document.getElementById('sentyours').addEventListener('click', () => {
