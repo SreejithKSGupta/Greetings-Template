@@ -2,93 +2,98 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
 }
 
 body {
-    background-color: #413e3e;
+    background-color: #f0f2f5;
     background-image: url(../res/backgrnd.webp);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
 }
 
 #content {
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: #413e3e;
-    background-image: url(../res/dance.webp);
-    background-size: cover;
-    opacity: 0.8;
+    width: 90%;
+    max-width: 600px;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
 
 #sentername {
-    width: 100%;
-    height: 30vh;
-    font-size: 4em;
+    font-size: 3em;
     font-weight: bold;
-    color: rgb(226, 0, 0);
-    text-align: center;
-    line-height: 30vh;
+    color: #e63946;
+    margin-bottom: 20px;
 }
 
 #wish {
-    width: 100%;
-    height: 60vh;
-    font-size: 2em;
-    font-weight: bold;
-    color: rgb(228, 15, 15);
-    text-align: center;
+    font-size: 1.5em;
+    font-weight: normal;
+    color: #333;
+    margin-bottom: 30px;
 }
 
 .button {
-    text-align: center;
-    width: 60%;
-    height: 7vh;
+    display: inline-block;
+    padding: 15px 30px;
     font-size: 1em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     font-weight: bold;
     color: #fff;
-    background-color: #27a9dd;
-    margin-bottom: 3vh;
-    border-radius: 10px;
-    margin: 0 auto;
+    background-color: #457b9d;
+    border: none;
+    border-radius: 50px;
     cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.button:hover {
+    background-color: #1d3557;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 input {
-    width: 80vw;
-    height: 10vh;
-    border-radius: 20px;
+    width: 100%;
+    padding: 15px;
+    font-size: 1.2em;
+    border: 1px solid #ddd;
+    border-radius: 50px;
     outline: none;
-    background-color: #413e3e;
-    font-size: 2em;
-    color: #fff;
-    padding: 0 30px;
+    margin-bottom: 20px;
+    transition: border-color 0.3s;
+}
+
+input:focus {
+    border-color: #457b9d;
 }
 
 @media screen and (min-width: 768px) {
     #content {
-        width: 40vw;
-        margin: 0 auto;
+        padding: 40px;
     }
 
     #sentername {
-        font-size: 8em;
-    }
-
-    #wish {
         font-size: 4em;
     }
 
-    .button {
+    #wish {
         font-size: 2em;
     }
 
+    .button {
+        font-size: 1.2em;
+    }
+
     input {
-        width: 30vw;
-        font-size: 6em;
+        padding: 20px;
+        font-size: 1.5em;
     }
 }
